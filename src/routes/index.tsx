@@ -1,21 +1,29 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+// import { Navbar } from "~/components/standalone/navbar/navbar";
+import { HeroSection } from "./hero-section";
+import { AboutSection } from "./about-section";
+import { ServicesSection } from "./services-section";
+import { ServeAboveSection } from "./serve-above-section";
+import { TestimonialCard } from "~/components/standalone/testimonial-card/testimonial-card";
+import { OurServiceArea } from "./OurServiceArea";
 
 export default component$(() => {
   return (
-    <>
-      <h1>Hi 👋</h1>
-      <p>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </p>
-    </>
+    <main>
+      {/* <Navbar /> */}
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+      <ServeAboveSection />
+      <OurServiceArea />
+      <TestimonialCard />
+    </main>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Welcome to NeoloProjects",
   meta: [
     {
       name: "description",

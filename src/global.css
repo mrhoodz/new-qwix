@@ -1,4 +1,8 @@
-
+/**
+ * PandaCSS CSS layers
+ * View the full documentation at https://panda-css.com/docs/concepts/cascade-layers#layer-css
+ */
+@layer reset, base, tokens, recipes, utilities;
 
 /**
  * WHAT IS THIS FILE?
@@ -8,6 +12,7 @@
  *
  */
 html {
+  /* content: :attr(); */
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
   -o-tab-size: 4;
@@ -27,9 +32,31 @@ html {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     "Noto Color Emoji";
+  font-size: 0.19vw;
+}
+
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 0.05vw;
+  }
 }
 
 body {
   padding: 0;
+  font-size: 16rem;
   line-height: inherit;
+  font-family: Poppins;
+}
+
+li {
+  font-size: 22rem;
+}
+
+.card-subtitle {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }

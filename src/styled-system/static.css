@@ -1,0 +1,41 @@
+@layer utilities {
+  .text_purpleBlue-bgColor {
+    color: var(--colors-purple-blue-bg-color)
+    }
+
+  .text_orange-bgColor {
+    color: var(--colors-orange-bg-color)
+    }
+
+  .text_main-textColor {
+    color: var(--colors-main-text-color)
+    }
+
+  .bg_purpleBlue-bgColor {
+    background-color: var(--colors-purple-blue-bg-color)
+    }
+
+  .bg_orange-bgColor {
+    background-color: var(--colors-orange-bg-color)
+    }
+
+  .bg_main-textColor {
+    background-color: var(--colors-main-text-color)
+    }
+
+  .border_purpleBlue-bgColor {
+    border-color: var(--colors-purple-blue-bg-color)
+    }
+
+  .border_orange-bgColor {
+    border-color: var(--colors-orange-bg-color)
+    }
+
+  .border_main-textColor {
+    border-color: var(--colors-main-text-color)
+    }
+
+  .border_main-bgColor {
+    border-color: var(--colors-main-bg-color)
+    }
+}
